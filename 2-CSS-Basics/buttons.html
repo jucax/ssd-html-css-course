@@ -1,0 +1,53 @@
+<!-- Learning how to use CSS creating some good style buttons:
+- The CSS has a selector that is the object we are working in (button) 
+- The left word is the CSS property that is what are we changing 
+- The right word is the CSS value that is what are we changing the property to -->
+
+<!-- In the color properties we are using RGB (Red-Green-Blue) -->
+<!-- In the size properties we are using pixels that is a common unit in CSS -->
+
+<!-- If we start the selector with . then we are referring to a class -->
+
+<style>
+    .subscribe-button {
+        background-color: rgb(200, 0, 0);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 105px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 8px;
+    }
+
+    .join-button {
+        background-color: white;
+        border-color: rgb(40, 115, 210);
+        border-style: solid;
+        border-width: 1px;
+        color: rgb(40, 115, 210);
+        height: 36px;
+        width: 62px;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+
+    .tweet-button {
+        background-color: rgb(0, 160, 255);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 74px;
+        border-radius: 18px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        margin-left: 8px;
+    }
+</style>
+
+<!-- The class attribute label HTML elements, so we can targered it in CSS -->
+
+<button class="subscribe-button">SUBSCRIBE</button>
+<button class="join-button">JOIN</button>
+<button class="tweet-button">Tweet</button>
