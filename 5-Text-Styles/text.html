@@ -1,0 +1,64 @@
+<!--We are going to practice the CSS styles for text-->
+
+<p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+<p class="video-stats">3.4M views &#183; 6 months ago</p>
+<p class="video-author">Marques Brownlee &#10003;</p>
+<p class="video-description">Talking tech and AI on the heels of Google I/O. Also a daily driver phone reveal from Google's CEO. Shoutout to Sundar!</p>
+
+<!-- CSS specificity says that if we have multiple lines for the same
+property, we have a priority that the program follows, the selector more
+specific is the one with more priority -->
+<style>
+    p {
+        font-family: Arial;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .video-title {
+        font-weight: bold;
+        font-size: 18px;
+        width: 280px;
+        line-height: 24px;
+        margin-bottom: 5px;
+    }
+    .video-stats {
+        font-size: 14px;
+        color: rgb(96, 96, 96);
+        margin-bottom: 20px;
+    }
+    .video-author {
+        font-size: 14px;
+        color: rgb(96, 96, 96);
+        margin-bottom: 20px;
+    }
+    .video-description {
+        font-size: 14px;
+        color: rgb(96, 96, 96);
+        width: 280px;
+        line-height: 22px;
+        margin-bottom: 100px;
+    }
+    .apple-text {
+        font-size: 14px;
+        background-color: rgb(227, 65, 64);
+        color: white;
+        margin-bottom: 50px;
+        text-align: center;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    .shop-link {
+        cursor: pointer;
+    }
+    .shop-link:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<!--Text element is a piece of text that is inside a line
+<strong> Bold
+<u> Underline
+<span class=""> To style parts of the line individually-->
+<p class="apple-text">Shop early for the best selection of holiday favourites. <span class="shop-link">Shop now &#62;</span></p>
+
+<!--Don't use multiple spaces between words, instead use marging for the span class-->
