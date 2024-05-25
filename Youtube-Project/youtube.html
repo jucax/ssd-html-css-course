@@ -5,18 +5,30 @@
         <style>
             .thumbnail {
                 width: 300px;
+                display: block;
             }
             .search-bar {
-                font-size: 20px;
-                margin-left: 12px;
+                
             }
+            .video-title {
+                width: 300px;
+            }
+
         </style>
     </head>
     <body>
-    <!--Img is also a void element like <link>-->
-        <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
-    <!--Input works for the search bar, placeholder is the text inside
-    that dissapear when we type something inside-->    
+        <!--Input works for the search bar, placeholder is the text inside
+        that dissapear when we type something inside-->    
         <input class="search-bar" type="text" placeholder="Search">
+
+        <!--Img is also a void element like <link>-->
+        <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+   
+        <!--Block elements like <p> take the entire line-->
+        <!--Inline block elements like <img> just take the space needed-->
+        <!--Inline element like <strong> just appear in the text line-->
+        <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+        <p class="video-author">Marques Brownlee</p>
+        <p class="video-stats">3.4M views &#183; 6 months ago</p>
     </body>
 </html>
