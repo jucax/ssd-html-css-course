@@ -1,0 +1,58 @@
+<!--Create a search bar and practice with different styles-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 9f</title>
+        <style>
+            .dog-image {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                vertical-align: middle;
+                margin-right: 5px;
+            }
+            .name {
+                font-size: 15px;
+                font-family: Arial;
+                font-weight: bold;
+                margin-bottom: 2px;
+            }
+            .mutual {
+                margin-top: 5px;
+                font-size: 12px;
+                font-family: Arial;
+                color: gray;
+            }
+            .add-button {
+                background-color: rgb(27, 130, 198);
+                color: white;
+                border: none;
+                padding-left: 12px;
+                padding-right: 12px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                font-size: 12px;
+                cursor: pointer;
+                transition: box-shadow 0.15s;
+            }
+            .box {
+                box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+                border-radius: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <img class="dog-image" src="dog.jpeg">
+            <p class="name">Oliver</p>
+            <p class="mutual">2 mutual friends</p>
+            <button class="add-button">Add Friends</button>    
+        </div>
+    </body>
+</html>

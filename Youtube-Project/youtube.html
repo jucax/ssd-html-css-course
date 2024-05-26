@@ -9,11 +9,17 @@
             }
             .search-bar {
                 width: 300px;
+                display: block;
             }
             .video-title {
                 width: 300px;
             }
-
+            .video-preview {
+                width: 300px;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 15px;
+            }
         </style>
     </head>
     <body>
@@ -21,14 +27,22 @@
         that dissapear when we type something inside-->    
         <input class="search-bar" type="text" placeholder="Search">
 
-        <!--Img is also a void element like <link>-->
-        <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
-   
-        <!--Block elements like <p> take the entire line-->
-        <!--Inline block elements like <img> just take the space needed-->
-        <!--Inline element like <strong> just appear in the text line-->
-        <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
-        <p class="video-author">Marques Brownlee</p>
-        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+        <!--<div> is division that is basically a box, they are containers-->
+        <div class="video-preview">        <!--Img is also a void element like <link>-->
+            <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+       
+            <!--Block elements like <p> take the entire line-->
+            <!--Inline block elements like <img> just take the space needed-->
+            <!--Inline element like <strong> just appear in the text line-->
+            <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+            <p class="video-author">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+        </div>
+        <div class="video-preview">        <!--Img is also a void element like <link>-->
+            <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
+            <p class="video-author">Markiplier</p>
+            <p class="video-stats">19M views &#183; 4 years ago</p>
+        </div>
     </body>
 </html>
