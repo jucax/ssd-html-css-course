@@ -1,0 +1,124 @@
+<!--Use the CSS nested layout technique and practice with different styles-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 10b</title>
+        <style>
+
+            p {
+                font-family: Arial;
+                line-height: 6px;
+            }
+            .profile-col {
+                display: inline-block;
+                margin-right: 8px;
+                vertical-align: middle;
+            }
+            .info-col {
+                display: inline-block;
+                width: 200px;
+                vertical-align: middle;
+            }
+            .button-col {
+                display: inline-block;
+            }
+            .dog-image {
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                border-radius: 25px;
+                margin-right: 5px;
+            }
+            .name {
+                font-weight: bold;
+            }
+            .lastname,
+            .description {
+                color: rgb(143, 142, 142);
+            }
+            .tweet-button {
+                background-color: rgb(29, 155, 240);
+                color: white;
+                border: none;
+                padding-left: 16px;
+                padding-right: 16px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                border-radius: 10px;
+                font-weight: bold;
+                font-size: 15px;
+                cursor: pointer;
+                transition: box-shadow 0.15s;
+                vertical-align: center;
+            }
+            .box {
+                border-radius: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="profile-col">
+                <img class="dog-image" src="dog.jpeg">
+            </div>
+            <div class="info-col">
+                <div>
+                    <p class="name">Max</p>
+                </div>
+                <div>
+                    <p class="lastname">the dog</p>
+                </div>
+                <div>
+                    <p class="description">Popular</p>
+                </div>
+            </div>
+            <div class="button-col">
+                <button class="tweet-button">Follow</button>    
+            </div>
+        </div>
+        <div class="box">
+            <div class="profile-col">
+                <img class="dog-image" src="dog-2.jpeg">
+            </div>
+            <div class="info-col">
+                <div>
+                    <p class="name">Mimi</p>
+                </div>
+                <div>
+                    <p class="lastname">sleepy dog</p>
+                </div>
+                <div>
+                    <p class="description">Popular</p>
+                </div>
+            </div>
+            <div class="button-col">
+                <button class="tweet-button">Follow</button>    
+            </div>
+        </div>
+        <div class="box">
+            <div class="profile-col">
+                <img class="dog-image" src="dog-3.jpeg">
+            </div>
+            <div class="info-col">
+                <div>
+                    <p class="name">Rex</p>
+                </div>
+                <div>
+                    <p class="lastname">happy dog</p>
+                </div>
+                <div>
+                    <p class="description">Popular</p>
+                </div>
+            </div>
+            <div class="button-col">
+                <button class="tweet-button">Follow</button>    
+            </div>
+        </div>
+    </body>
+</html>
