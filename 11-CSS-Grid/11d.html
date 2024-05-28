@@ -1,0 +1,129 @@
+<!--Use the CSS grid technique and practice with different styles-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 9g</title>
+        <style>
+            .dog-image {
+                width: 100%;
+                height: 150px;
+                object-fit: cover;
+            }
+            .name {
+                font-size: 15px;
+                font-family: Arial;
+                font-weight: bold;
+                margin-bottom: 2px;
+            }
+            .profile-picture {
+                width: 25px;
+                height: 25px;
+                border-radius: 15px;
+            }
+            .profile-col {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .mutual-col {
+                margin-left: 5px;
+                display: inline-block;
+            }
+            .mutual {
+                margin-top: 5px;
+                font-size: 12px;
+                font-family: Arial;
+                color: gray;
+            }
+            .add-button {
+                background-color: rgb(27, 130, 198);
+                color: white;
+                border: none;
+                padding-left: 12px;
+                padding-right: 12px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                font-size: 12px;
+                cursor: pointer;
+                transition: box-shadow 0.15s;
+                border-radius: 4px;
+            }
+            .box {
+                box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+                border-radius: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .grid {
+                display: grid;
+                grid-template-columns: 180px 180px 180px;
+                column-gap: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid">
+            <div class="box">
+                <div>
+                    <img class="dog-image" src="dog.jpeg">
+                </div>
+                <div>
+                    <p class="name">Oliver</p>
+                </div>
+                <div>
+                    <div class="profile-col">
+                        <img class="profile-picture" src="dog-4.webp">
+                    </div>
+                    <div class="mutual-col">
+                        <p class="mutual">2 mutual friends</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="add-button">Add Friends</button>    
+                </div>
+            </div>
+
+            <div class="box">
+                <div>
+                    <img class="dog-image" src="dog-2.jpeg">
+                </div>
+                <div>
+                    <p class="name">Mimi</p>
+                </div>
+                <div>
+                    <div class="profile-col">
+                        <img class="profile-picture" src="dog-4.webp">
+                    </div>
+                    <div class="mutual-col">
+                        <p class="mutual">3 mutual friends</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="add-button">Add Friends</button>    
+                </div>
+            </div>
+
+            <div class="box">
+                <div>
+                    <img class="dog-image" src="dog-3.jpeg">
+                </div>
+                <div>
+                    <p class="name">Oliver</p>
+                </div>
+                <div>
+                    <div class="profile-col">
+                        <img class="profile-picture" src="dog-4.webp">
+                    </div>
+                    <div class="mutual-col">
+                        <p class="mutual">4 mutual friends</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="add-button">Add Friends</button>    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
