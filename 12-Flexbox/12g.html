@@ -1,0 +1,104 @@
+<!--Use the CSS flexbox technique and practice with different styles-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 12g</title>
+        <style>
+            p {
+                font-family: Arial;
+                margin: 0px;
+            }
+            .box {
+                width: 400px;
+                border-width: 1px;
+                border-style: solid;
+                border-color: rgb(199, 200, 203);
+            }
+            .flexbox {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 8px;
+                margin-top: 10px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .follow-button {
+                background-color: rgb(29, 155, 240);
+                color: white;
+                border: none;
+                padding-left: 16px;
+                padding-right: 16px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                border-radius: 6px;
+                font-weight: bold;
+                font-size: 15px;
+                cursor: pointer;
+                transition: box-shadow 0.15s;
+                vertical-align: center;
+            }
+            .dog-image {
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                border-radius: 25px;
+                margin-right: 5px;
+            }
+            .name {
+                font-weight: bold;
+            }
+            .lastname,
+            .description {
+                color: rgb(143, 142, 142);
+            }
+            .middle-section {
+                margin-left: 10px;
+                flex: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="flexbox">
+                <div class="left-section">
+                    <img class="dog-image" src="dog.jpeg">
+                </div>
+                <div class="middle-section">
+                    <p class="name">Max</p>
+                    <p class="lastname">the dog</p>
+                    <p class="description">Popular</p>
+                </div>
+                <div class="right-section">
+                    <button class="follow-button">Follow</button>    
+                </div>
+            </div>
+            <div class="flexbox">
+                <div class="left-section">
+                    <img class="dog-image" src="dog-2.jpeg">
+                </div>
+                <div class="middle-section">
+                    <p class="name">Mimi</p>
+                    <p class="lastname">sleepy dog</p>
+                    <p class="description">Popular</p>
+                </div>
+                <div class="right-section">
+                    <button class="follow-button">Follow</button>    
+                </div>
+            </div>
+            <div class="flexbox">
+                <div class="left-section">
+                    <img class="dog-image" src="dog-3.jpeg">
+                </div>
+                <div class="middle-section">
+                    <p class="name">Rex</p>
+                    <p class="lastname">happy dog</p>
+                    <p class="description">Popular</p>
+                </div>
+                <div class="right-section">
+                    <button class="follow-button">Follow</button>    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<!--Use the CSS flexbox technique and practice with different styles-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 12e</title>
+        <style>
+            p {
+                font-family: Arial;
+                margin: 0px;
+            }
+            .box {
+                width: 300px;
+                border-width: 1px;
+                border-style: solid;
+                border-color: rgb(199, 200, 203);
+            }
+            .flexbox {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 8px;
+                margin-top: 8px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .notifications-button {
+                background-color: rgb(85, 123, 211);
+                color: white;
+                border: none;
+                border-radius: 10px;
+                font-size: 14px;
+                font-weight: bold;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="flexbox">
+                <div class="left-section">
+                    <p>Home</p>
+                </div>
+                <div class="right-section">
+                    <button class="notifications-button">14</button>
+                </div>
+            </div>
+            <div class="flexbox">
+                <div class="left-section">
+                    <p>Notifications</p>
+                </div>
+                <div class="right-section">
+                    <button class="notifications-button">3</button>
+                </div>
+            </div>
+            <div class="flexbox">
+                <div class="left-section">
+                    <p>Messages</p>
+                </div>
+                <div class="right-section">
+                    <button class="notifications-button">5</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
