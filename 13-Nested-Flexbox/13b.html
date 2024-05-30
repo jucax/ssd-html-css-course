@@ -1,0 +1,38 @@
+<!--Use the CSS nested flexbox technique and practice with different styles-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 13b</title>
+        <style>
+            .flexbox {
+                display: flex;
+            }
+            .nested-flexbox {
+                display: flex;
+                flex-direction: column;
+            }
+            .nested-flexbox-2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            p {
+                margin: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flexbox">
+            <div style="background-color: lightpink; width: 100px; ">
+
+            </div>
+            <div class="nested-flexbox" style="background-color: lightblue; width: 200px; height: 50px;">
+                <p>row1</p>
+                <div class="nested-flexbox-2">
+                    <p>row2</p>
+                    <p>row2</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

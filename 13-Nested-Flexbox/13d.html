@@ -1,0 +1,114 @@
+<!--Use the CSS nested flexbox technique and practice with different styles-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 13d</title>
+        <style>
+            p {
+                font-family: Arial;
+                margin: 0px;
+            }
+            .flexbox {
+                width: 380px;
+                display: flex;
+                flex-direction: column;
+                box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+                border-radius: 5px;
+                padding-top: 10px;
+                padding-bottom: 25px;
+                padding-left: 10px;
+                padding-right: 2px;
+            }
+            .row2 {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 20px;
+            }
+            .col2 {
+                display: flex;
+                flex-direction: column;
+                padding-left: 10px;
+            }
+            .title-box {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .profile-picture {
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                border-radius: 25px;
+                margin-top: 8px;
+            }
+            .all-text {
+                font-size: 14px;
+                color: gray;
+                margin-bottom: 20px;
+            }
+            .title-text {
+                font-size: 17px;
+                font-weight: bold;
+                margin-bottom: 2px;
+            }
+            .time-text {
+                font-size: 13px;
+                color: gray;
+            }
+            .subtitle-text {
+                font-size: 15px;
+                font-weight: bold;
+                margin-bottom: 4px;
+            }
+            .content-text {
+                font-size: 15px;
+                color: gray;
+                margin-bottom: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flexbox">
+            <p class="all-text">ALL INBOXES</p>
+
+            <div class="row2">
+                <img class="profile-picture" src="dog.jpeg">
+
+                <div class="col2">
+                    <div class="title-box">
+                        <p class="title-text">Chewy Promotions</p>
+                        <p class="time-text">4:58 PM</p>
+                    </div>
+                    <p class="subtitle-text">Biggest sales of the year!</p>
+                    <p class="content-text">Hey there! We're writing to tell you about our...</p>
+                </div>
+            </div>
+
+            <div class="row2">
+                <img class="profile-picture" src="dog-2.jpeg">
+
+                <div class="col2">
+                    <div class="title-box">
+                        <p class="title-text">Best Buy</p>
+                        <p class="time-text">12:32 PM</p>
+                    </div>
+                    <p class="subtitle-text">Your Best Buy eReceipt</p>
+                    <p class="content-text">Thank you for shopping at Best Buy, here is...</p>
+                </div>
+            </div>
+
+            <div class="row2">
+                <img class="profile-picture" src="dog-3.jpeg">
+
+                <div class="col2">
+                    <div class="title-box">
+                        <p class="title-text">Netflix</p>
+                        <p class="time-text">9:00 AM</p>
+                    </div>
+                    <p class="subtitle-text">Here's what's coming soon to Netflix</p>
+                    <p class="content-text">Brand new movies and shows, old favorites...</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
