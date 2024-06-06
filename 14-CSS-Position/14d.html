@@ -1,0 +1,61 @@
+<!--Use the CSS position technique and practice with different styles-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 14d</title>
+        <style>
+            p {
+                font-family: Arial;
+                margin: 0px;
+            }
+            .overlay {
+                background-color: rgba(0, 0, 0, 0.8);
+                position: fixed;
+                bottom: 0px;
+                right: 0px;
+                top: 0px;
+                left: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .sidebar {
+                background-color: green;
+                color: white;
+                position: fixed;
+                bottom: 0px;
+                right: 0px;
+                top: 0px;
+                width: 100px;
+            }
+            .modal {
+                background-color: white;
+                width: 300px;
+                padding: 10px;
+                border-radius: 10px;
+            }
+            .title {
+                font-size: 28px;
+                font-weight: bold;
+                margin-bottom: 8px;
+            }
+            .close-button {
+                margin-top: 10px;
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sidebar">
+            right sidebar
+        </div>
+        <div class="overlay">
+            <div class="modal">
+                <p class="title">Modal Title</p>
+                <p class="subtitle">This is a modal</p>
+                <button class="close-button">Close</button>
+            </div>
+        </div>
+    </body>
+</html>
