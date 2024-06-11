@@ -1,0 +1,38 @@
+<!--Use the CSS absolute and relative position technique and practice with different styles-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 15e</title>
+        <style>
+            .img {
+                height: 300px;
+            }
+            .picture {
+                position: relative;
+                display: inline-block;
+            }
+            .discount {
+                font-family: Arial;
+                font-size: 12px;
+                background-color: black;
+                color: white;
+                display: inline-block;
+                padding-left: 8px;
+                padding-right: 8px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                position: absolute;
+                top: 10px;
+                right: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="picture">
+            <img class="img" src="dog-2.jpeg">
+            <div class="discount">
+                20% OFF
+            </div>
+        </div>
+    </body>
+</html>

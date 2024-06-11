@@ -1,0 +1,65 @@
+<!--Use the CSS absolute and relative position technique and practice with different styles-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 15f</title>
+        <style>
+            .img {
+                height: 300px;
+            }
+            .picture {
+                position: relative;
+                display: inline-block;
+            }
+            .discount {
+                font-family: Arial;
+                font-size: 12px;
+                background-color: black;
+                color: white;
+                display: inline-block;
+                padding-left: 8px;
+                padding-right: 8px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                position: absolute;
+                top: 10px;
+                right: 0px;
+            }
+            .flexbox {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                bottom: 0px;
+                left: 1px;
+                background-color: white;
+                width: 300px;
+                height: 8cqmin;
+                opacity: 0.7;
+            }
+            .cart-button {
+                font-size: 14px;
+                font-family: Arial;
+                background-color: white;
+                border-style: solid;
+                border-width: 1px;
+                border-color: black;
+                padding-left: 12px;
+                padding-right: 12px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="picture">
+            <img class="img" src="dog-2.jpeg">
+            <div class="discount">
+                20% OFF
+            </div>
+            <div class="flexbox">
+                <button class="cart-button">Add to Cart</button>
+            </div>
+        </div>
+    </body>
+</html>
